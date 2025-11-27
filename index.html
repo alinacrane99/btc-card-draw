@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crypto Card Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Crypto Card Simulator</h1>
+      <div class="bank">
+        CryptoBank: <span id="bank-balance">0.00000000 BTC</span>
+      </div>
+      <div class="btc-price">
+        BTC Price: <span id="btc-price">loading...</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls">
+        <button id="buy-draw-btn">Buy Draw (x1)</button>
+        <span id="draw-cost-info"></span>
+      </section>
+
+      <section class="card-area">
+        <div id="card" class="card">
+          <div class="card-bitcoin">₿</div>
+          <div class="card-qr">[QR]</div>
+          <div class="card-value" id="card-value-label">
+            Draw a card to see value
+          </div>
+        </div>
+      </section>
+
+      <section class="log">
+        <h2>Log</h2>
+        <ul id="log-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
